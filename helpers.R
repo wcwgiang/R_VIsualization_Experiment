@@ -117,7 +117,7 @@ load_next_trial <- function(){
     }
   } 
   # Check if we're done the experiment and should save the data
-  if (i_temp == length(SCENARIO[,1])){
+  if (i_temp == length(SCENARIOS[,1])){
     saveData(experiment_data)
     experiment_parameters$finished <<- TRUE
   } else {
